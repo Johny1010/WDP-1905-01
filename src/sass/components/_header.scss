@@ -171,6 +171,14 @@ header {
         display: flex;
         align-items: center;
         position: relative;
+        transition: 0.2s;
+
+        &:hover {
+          background-color: #eee;
+          i:last-child {
+            color: $primary;
+          }
+        }
 
         i:first-child {
           color: $primary;
