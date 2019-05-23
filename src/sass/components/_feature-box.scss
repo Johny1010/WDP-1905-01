@@ -49,7 +49,7 @@
     }
   }
 
-  &.active {
+  &.active:hover {
     i {
       background-color: $primary;
       color: #ffffff;
