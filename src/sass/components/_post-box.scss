@@ -1,30 +1,36 @@
 .post-box {
   margin-bottom: 2rem;
 
-  .cover {
-    padding: 70% 25px 0 25px;
-    background: {
-      color: #f4f5f7;
-      size: cover;
-      position: center;
-    }
+  .post-link {
+    text-decoration: none;
+    color: inherit;
 
-    .details {
-      padding: 15px 20px;
-      display: flex;
-      background-color: #ffffff;
-      font-size: 14px;
-
-      & > * {
-        flex: 1 1 auto;
+    .cover {
+      padding: 70% 25px 0 25px;
+      background: {
+        color: #f4f5f7;
+        size: cover;
+        position: center;
       }
 
-      .date {
-        text-align: left;
-      }
+      .details {
+        color: #2a2a2a;
+        padding: 15px 20px;
+        display: flex;
+        background-color: #ffffff;
+        font-size: 14px;
 
-      .comments {
-        text-align: right;
+        & > * {
+          flex: 1 1 auto;
+        }
+
+        .date {
+          text-align: left;
+        }
+
+        .comments {
+          text-align: right;
+        }
       }
     }
   }
@@ -33,7 +39,6 @@
     padding: 25px;
 
     h5 {
-      color: $primary;
       font-size: 16px;
       line-height: 24px;
       letter-spacing: 1px;
@@ -49,6 +54,29 @@
     .more {
       text-align: center;
       padding-top: 30px;
+
+      background-color: #2a2a2a;
+      color: #ffffff;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 600;
+      padding: 10px 30px;
+    }
+  }
+  
+  &:hover {
+
+    h5 {
+      color: $primary;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 1px;
+    }
+
+    .more {
+      color: #ffffff !important;
+      background-color: $primary;
+      text-decoration: none;
     }
   }
 }
