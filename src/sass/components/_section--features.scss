@@ -1,3 +1,13 @@
 .section--features {
   padding: 5rem 0;
 }
+@media (max-width: 768px) {
+  .section--features {
+    .col-6 {
+      margin-bottom: 20px;
+    }
+    .feature-box {
+      min-height: 140px;
+    }
+  }
+}
