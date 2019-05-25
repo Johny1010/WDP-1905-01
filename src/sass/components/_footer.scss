@@ -78,3 +78,19 @@ footer {
     }
   }
 }
+@media (max-width: 576px) {
+  footer {
+    .footer-menu .menu-wrapper {
+      ul li a {
+        font-size: 12px;
+      }
+    }
+    .bottom-bar {
+      .socialmedia {
+        ul li {
+          margin-left: 3px;
+        }
+      }
+    }
+  }
+}
