@@ -6,12 +6,14 @@
   .photo {
     position: relative;
     padding: 80% 10px 0 10px;
+
     background: {
       color: #f4f5f7;
       size: contain;
       position: center;
       repeat: no-repeat;
     }
+
     overflow: hidden;
     align-items: flex-end;
 
@@ -78,5 +80,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) and (orientation: portrait) {
+  .section--products .col-md-4 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 575px) and (orientation: portrait) {
+  .section--products .col-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 }
