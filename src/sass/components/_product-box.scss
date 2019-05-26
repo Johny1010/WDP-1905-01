@@ -56,6 +56,29 @@
         &.full {
           @extend .fas;
         }
+        &.rated {
+          @extend .fas;
+          color: $primary;
+        }
+      }
+    }
+    .stars.on-hover {
+      a {
+        @extend .far;
+        &.hovered {
+          @extend .fas;
+          color: $primary;
+        }
+      }
+    }
+    .stars.rated {
+      a {
+        cursor: default;
+        @extend .far;
+        &.full {
+          @extend .fas;
+          color: $primary;
+        }
       }
     }
   }
