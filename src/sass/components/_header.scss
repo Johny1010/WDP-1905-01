@@ -232,7 +232,7 @@ header {
         line-height: 45px;
       }
 
-      .text-left ul li {
+      .menu-dropdowns ul li {
         margin-right: 0.6rem;
         font-size: 12px;
 
@@ -241,7 +241,7 @@ header {
         }
       }
 
-      .text-right ul li {
+      .menu-user-panel ul li {
         margin-left: 5px;
 
         a {
@@ -257,12 +257,12 @@ header {
     }
 
     .company-claim {
-      .row {
+      .company-claim-wrapper {
         position: relative;
       }
 
       .container > .row {
-        height: 115px;
+        max-height: 115px;
       }
 
       .cart {
