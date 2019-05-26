@@ -19,6 +19,7 @@ footer {
             font-size: 14px;
             line-height: 30px;
             color: rgb(169, 169, 169);
+            @extend %transition-time;
 
             &:hover {
               color: #ffffff;
@@ -68,11 +69,28 @@ footer {
           a {
             color: rgb(169, 169, 169);
             text-decoration: none;
+            @extend %transition-time;
 
             &:hover {
               color: $primary;
             }
           }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 576px) {
+  footer {
+    .footer-menu .menu-wrapper {
+      ul li a {
+        font-size: 12px;
+      }
+    }
+    .bottom-bar {
+      .socialmedia {
+        ul li {
+          margin-left: 3px;
         }
       }
     }
