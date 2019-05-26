@@ -1,13 +1,19 @@
 .post-box {
   margin-bottom: 2rem;
 
+  .post1 {
+    background-image: url(../images/post1.jpeg);
+  }
+  .post2 {
+    background-image: url(../images/post2.jpeg);
+  }
+  .post3 {
+    background-image: url(../images/post3.jpeg);
+  }
+
   .cover {
     padding: 70% 25px 0 25px;
-    background: {
-      color: #f4f5f7;
-      size: cover;
-      position: center;
-    }
+    background-position: center;
 
     .details {
       padding: 15px 20px;

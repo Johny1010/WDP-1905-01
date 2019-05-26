@@ -3,11 +3,35 @@
   border: 1px solid #e1e1e1;
   margin-bottom: 2rem;
 
+  .photo1 {
+    background-image: url(../images/product1.jpeg);
+  }
+  .photo2 {
+    background-image: url(../images/product2.jpeg);
+  }
+  .photo3 {
+    background-image: url(../images/product3.jpeg);
+  }
+  .photo4 {
+    background-image: url(../images/product4.jpeg);
+  }
+  .photo5 {
+    background-image: url(../images/product5.jpeg);
+  }
+  .photo6 {
+    background-image: url(../images/product6.jpeg);
+  }
+  .photo7 {
+    background-image: url(../images/product7.jpeg);
+  }
+  .photo8 {
+    background-image: url(../images/product8.jpeg);
+  }
+
   .photo {
     position: relative;
     padding: 80% 10px 0 10px;
     background: {
-      color: #f4f5f7;
       size: contain;
       position: center;
       repeat: no-repeat;
