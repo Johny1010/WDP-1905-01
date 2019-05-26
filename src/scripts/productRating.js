@@ -21,12 +21,11 @@ const rateProduct = (product, e) => {
   }
 };
 const productRatesBoxes = document.querySelectorAll('.stars');
-productRatesBoxes.forEach(box =>
-  box.addEventListener('click', e => rateProduct(box, e))
-);
-productRatesBoxes.forEach(box =>
-  box.addEventListener('mouseover', e => hoverStars(box, e))
-);
-productRatesBoxes.forEach(box =>
-  box.addEventListener('mouseout', e => cleanHover(box, e))
-);
+['click', 'mouseover', 'mouseout'].forEach((event, i) => {
+  productRatesBoxes.forEach(product =>
+    product.addEventListener(
+      event,
+      [rateProduct, hoverStars, cleanHover][i].bind(null, product)
+    )
+  );
+});
