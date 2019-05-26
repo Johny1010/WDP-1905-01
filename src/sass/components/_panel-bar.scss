@@ -44,11 +44,15 @@
           text-decoration: none;
           font-size: 18px;
           display: block;
+          &::before {
+            content: "";
+            border-bottom: 4px solid transparent;
+            @extend %transition-time;
+          }
 
           &.active,
           &:hover {
             &::before {
-              content: "";
               position: absolute;
               bottom: -4px;
               left: 0;
@@ -79,6 +83,7 @@
           height: 13px;
           border-radius: 6px;
           background-color: #e1e1e1;
+          @extend %transition-time;
 
           &.active,
           &:hover {
