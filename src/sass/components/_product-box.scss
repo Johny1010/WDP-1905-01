@@ -91,7 +91,7 @@
 }
 
 @media (max-width: 575px) and (orientation: portrait) {
-  .section--products .col-3 {
+  .section--products .col-xs-12 {
     flex: 0 0 100%;
     max-width: 100%;
   }
