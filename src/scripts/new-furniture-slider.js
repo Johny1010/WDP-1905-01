@@ -5,11 +5,12 @@ const dotsContainer = document.querySelector('.section--products .dots');
 const slider = tns({
   container: '.new-furniture-slider',
   items: 1,
-  slideBy: 'page',
+  slideBy: 1,
   controls: false,
   autoplayButtonOutput: false,
   mouseDrag: true,
   swipeAngle: 10,
+  nav: true,
   responsive: {
     576: {
       items: 2

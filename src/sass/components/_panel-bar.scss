@@ -68,10 +68,10 @@
   .dots {
     margin: 0;
     padding: 0 0 0 1rem;
-    list-style: none;
     background-color: #ffffff;
     transform: translateY(13px);
     border-bottom: none;
+    z-index: 1;
     .slider-control {
       margin-left: 0.5rem;
       width: 13px;
