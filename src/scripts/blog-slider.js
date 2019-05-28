@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-const dotsContainer = document.querySelector('.section--blog-posts .dots ul');
+const dotsContainer = document.querySelector('.section--blog-posts .dots');
 
 // eslint-disable-next-line no-unused-vars
 const slider = tns({
@@ -19,8 +19,4 @@ const slider = tns({
     }
   },
   navContainer: dotsContainer
-});
-
-dotsContainer.querySelectorAll('a').forEach(e => {
-  e.addEventListener('click', e => e.preventDefault());
 });
