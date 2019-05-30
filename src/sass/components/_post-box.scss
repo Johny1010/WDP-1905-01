@@ -53,10 +53,3 @@
     }
   }
 }
-
-@media (max-width: 767px) and (orientation: portrait) {
-  .section--blog-posts .col-sm-12 {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-}
