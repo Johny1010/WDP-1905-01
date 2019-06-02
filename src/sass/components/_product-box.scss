@@ -60,11 +60,6 @@
           @extend .fas;
           color: $primary;
         }
-      }
-    }
-    .stars.on-hover {
-      a {
-        @extend .far;
         &.hovered {
           @extend .fas;
           color: $primary;
