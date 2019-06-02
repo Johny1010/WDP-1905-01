@@ -13,3 +13,11 @@
     }
   }
 }
+@media (max-width: 768px) {
+  .section--features {
+    .feature-box {
+      min-height: 140px;
+      margin-bottom: 20px;
+    }
+  }
+}
