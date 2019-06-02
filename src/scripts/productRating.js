@@ -1,14 +1,14 @@
 const hoverStars = (product, e) => {
   if (product.classList.contains('rated')) return;
-  product.classList.add('on-hover');
   for (let i = 0; i < parseInt(e.target.dataset.star); i++) {
     product.querySelectorAll('a')[i].classList.add('hovered');
   }
 };
+
 const cleanHover = (product, e) => {
-  product.classList.remove('on-hover');
   e.target.querySelectorAll('a').forEach(star => star.classList.remove('hovered'));
 };
+
 const rateProduct = (product, e) => {
   e.preventDefault();
   const rate = e.target.dataset.star;
@@ -20,13 +20,10 @@ const rateProduct = (product, e) => {
     }
   }
 };
+
 const productRatesBoxes = document.querySelectorAll('.stars');
-productRatesBoxes.forEach(box =>
-  box.addEventListener('click', e => rateProduct(box, e))
-);
-productRatesBoxes.forEach(box =>
-  box.addEventListener('mouseover', e => hoverStars(box, e))
-);
-productRatesBoxes.forEach(box =>
-  box.addEventListener('mouseout', e => cleanHover(box, e))
-);
+productRatesBoxes.forEach(box => {
+  box.addEventListener('click', e => rateProduct(box, e));
+  box.addEventListener('mouseover', e => hoverStars(box, e));
+  box.addEventListener('mouseout', e => cleanHover(box, e));
+});
