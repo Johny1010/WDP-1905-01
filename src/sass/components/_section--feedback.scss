@@ -12,14 +12,12 @@
     .feedback-author {
       max-width: 300px;
       margin: 20px auto;
-      p {
+      .author-name {
+        font-weight: 700;
         margin: 5px 0;
-        &.author-name {
-          font-weight: 700;
-        }
-        &.author-info {
-          color: #676767;
-        }
+      }
+      .author-info {
+        color: #676767;
       }
     }
   }
