@@ -12,18 +12,13 @@
     }
     .feedback-author {
       max-width: 300px;
-      margin: 10px auto;
-      .author-info,
-      .author-name {
-        margin: 0;
-        transform: translateX(-10px);
-      }
+      margin: 20px auto;
       .author-name {
         font-weight: 700;
-        margin-top: 2px;
+        margin: 5px 0;
       }
-      .author-img {
-        max-width: 55px;
+      .author-info {
+        color: #676767;
       }
     }
   }
