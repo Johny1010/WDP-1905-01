@@ -1,0 +1,26 @@
+.section--feedback {
+  margin-bottom: 4rem;
+  .feedback-slider {
+    .quote {
+      transform: scale(8) translateY(-15%);
+      margin-bottom: 2.5rem;
+    }
+    .feedback-text {
+      padding: 10px 3rem;
+      color: #676767;
+    }
+    .feedback-author {
+      max-width: 300px;
+      margin: 20px auto;
+      p {
+        margin: 5px 0;
+        &.author-name {
+          font-weight: 700;
+        }
+        &.author-info {
+          color: #676767;
+        }
+      }
+    }
+  }
+}
