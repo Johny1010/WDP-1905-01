@@ -200,15 +200,13 @@ header {
           list-style-type: none;
           padding: 5px 30px 5px 35px;
           margin: 0;
-          text-align: center;
+          text-align: left;
           -webkit-appearance: none;
           border: 10px;
           background-color: transparent;
           outline: none;
-          padding: 5px 30px 5px 35px;
           font-size: 14px;
           position: relative;
-          text-align: center;
           z-index: 1;
 
           a {
@@ -229,9 +227,19 @@ header {
                 ul {
                   display: none;
                   list-style-type: none;
-                  padding: 5px 30px 5px 30px;
+                  padding: 0;
                   margin: 0;
                   background-color: #eee;
+                  box-shadow: 5px 5px 5px rgb(190, 188, 188);
+
+                  li {
+                    padding: 5px 30px 5px 15px;
+                    text-align: left;
+
+                    &:hover {
+                      background-color: rgba(0, 202, 202, 0.575);
+                    }
+                  }
                 }
               }
             }
