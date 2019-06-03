@@ -78,5 +78,8 @@ typings/
 # Serverless directories
 .serverless
 
+# Visual Studio history
+.history
+
 
 # End of https://www.gitignore.io/api/node
