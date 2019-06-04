@@ -3,12 +3,10 @@
   border: 1px solid #e1e1e1;
   margin-bottom: 2rem;
 
-  $products: 8;
-  @while $products > 0 {
-    .photo:nth-child(#{$products}) {
-      background-image: url("../images/product#{$products}.jpeg");
+  @for $i from 1 to 9 {
+    .photo-#{$i} {
+      background-image: url("../images/product#{$i}.jpeg");
     }
-    $products: $products - 1;
   }
 
   .photo {
