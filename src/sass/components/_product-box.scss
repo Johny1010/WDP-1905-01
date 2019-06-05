@@ -56,10 +56,7 @@
         &.full {
           @extend .fas;
         }
-        &.rated {
-          @extend .fas;
-          color: $primary;
-        }
+        &.rated,
         &.hovered {
           @extend .fas;
           color: $primary;
