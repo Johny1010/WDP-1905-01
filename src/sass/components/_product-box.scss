@@ -3,12 +3,17 @@
   border: 1px solid #e1e1e1;
   margin-bottom: 2rem;
 
+  @for $i from 1 to 9 {
+    .photo-#{$i} {
+      background-image: url("../images/product#{$i}.jpeg");
+    }
+  }
+
   .photo {
     position: relative;
     padding: 80% 10px 0 10px;
 
     background: {
-      color: #f4f5f7;
       size: contain;
       position: center;
       repeat: no-repeat;
