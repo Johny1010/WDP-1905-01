@@ -82,17 +82,3 @@
     align-items: center;
   }
 }
-
-@media (min-width: 768px) and (max-width: 991px) and (orientation: portrait) {
-  .section--products .non-b-column {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-}
-
-@media (max-width: 575px) and (orientation: portrait) {
-  .section--products .non-b-column {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-}
