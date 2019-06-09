@@ -3,15 +3,22 @@
   border: 1px solid #e1e1e1;
   margin-bottom: 2rem;
 
+  @for $i from 1 to 9 {
+    .photo-#{$i} {
+      background-image: url("../images/product#{$i}.jpeg");
+    }
+  }
+
   .photo {
     position: relative;
     padding: 80% 10px 0 10px;
+
     background: {
-      color: #f4f5f7;
       size: contain;
       position: center;
       repeat: no-repeat;
     }
+
     overflow: hidden;
     align-items: flex-end;
 
@@ -29,6 +36,7 @@
     .buttons {
       display: flex;
       justify-content: space-between;
+      visibility: hidden;
     }
   }
 
@@ -52,6 +60,21 @@
 
         &.full {
           @extend .fas;
+        }
+        &.rated,
+        &.hovered {
+          @extend .fas;
+          color: $primary;
+        }
+      }
+    }
+    .stars.rated {
+      a {
+        cursor: default;
+        @extend .far;
+        &.full {
+          @extend .fas;
+          color: $primary;
         }
       }
     }
@@ -78,5 +101,22 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    .price.old {
+      .btn-main-small {
+        text-decoration: line-through;
+        background-color: transparent;
+        color: #999;
+      }
+    }
+  }
+
+  &:hover {
+    .buttons {
+      visibility: visible;
+    }
+
+    .btn-main-small.no-hover {
+      background-color: $primary;
+    }
   }
 }

@@ -1,16 +1,13 @@
-.post-box {
+.post-link {
   margin-bottom: 2rem;
+  color: inherit;
 
   .cover {
     padding: 70% 25px 0 25px;
-
-    background: {
-      color: #f4f5f7;
-      size: cover;
-      position: center;
-    }
+    background-position: center;
 
     .details {
+      color: #2a2a2a;
       padding: 15px 20px;
       display: flex;
       background-color: #ffffff;
@@ -34,7 +31,6 @@
     padding: 25px;
 
     h5 {
-      color: $primary;
       font-size: 16px;
       line-height: 24px;
       letter-spacing: 1px;
@@ -49,7 +45,28 @@
 
     .more {
       text-align: center;
-      padding-top: 30px;
+      background-color: #2a2a2a;
+      color: #ffffff;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 600;
+      padding: 10px 30px;
+    }
+  }
+
+  &:hover {
+    text-decoration: none;
+
+    h5 {
+      color: $primary;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 1px;
+    }
+
+    .more {
+      color: #ffffff !important;
+      background-color: $primary;
     }
   }
 }
