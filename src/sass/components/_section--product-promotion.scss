@@ -78,12 +78,12 @@
               color: white;
               text-align: center;
               font-size: 25px;
-              margin: 0px;
+              margin: 1px;
               padding-top: 6px;
 
               &:nth-last-child(1) {
                 font-size: 12px;
-                margin: 0px;
+                margin: -5px;
                 padding: 0px;
               }
             }
