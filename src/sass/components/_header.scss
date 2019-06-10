@@ -116,19 +116,94 @@ header {
   .menu-bar {
     box-shadow: 2px 3.464px 6px rgba(1, 2, 2, 0.2);
     background-color: #ffffff;
+    text-align: center;
 
-    .container > .row {
-      height: 84px;
+    .search-bar {
+      padding-bottom: 10px;
+      margin: 0 auto;
+
+      .search-form {
+        border: 1px solid $form-border-color;
+        display: flex;
+        height: 45px;
+        color: $text-color;
+        padding: 0;
+        margin: 0;
+
+        .category {
+          border-right: 1px solid $form-border-color;
+          display: flex;
+          align-items: center;
+          position: relative;
+          transition: 0.2s;
+
+          &:hover {
+            background-color: #eee;
+            i:last-child {
+              color: $primary;
+            }
+          }
+
+          i:first-child {
+            color: $primary;
+            position: absolute;
+            left: 10px;
+            z-index: 0;
+          }
+
+          i:last-child {
+            position: absolute;
+            right: 10px;
+            z-index: 0;
+          }
+
+          select {
+            -webkit-appearance: none;
+            border: 0;
+            background-color: transparent;
+            outline: none;
+            padding: 5px 30px 5px 35px;
+            font-size: 14px;
+            position: relative;
+            z-index: 1;
+          }
+        }
+
+        .search-field {
+          display: flex;
+          align-items: center;
+          position: relative;
+          width: 220px;
+
+          input {
+            border: 0;
+            padding-left: 10px;
+            font-size: 14px;
+            outline: none;
+
+            &::placeholder {
+              color: $text-color;
+            }
+          }
+
+          button {
+            border: 0;
+            background-color: transparent;
+            outline: none;
+          }
+        }
+      }
     }
 
     .menu {
-      display: flex;
-      align-self: stretch;
+      margin: 0 auto;
+      padding-bottom: 10px;
 
       ul {
         margin: 0;
         padding: 0;
         display: flex;
+        align-self: stretch;
 
         li {
           list-style: none;
@@ -159,75 +234,6 @@ header {
               border-color: $text-color;
             }
           }
-        }
-      }
-    }
-
-    .search-form {
-      border: 1px solid $form-border-color;
-      display: inline-flex;
-      height: 45px;
-      color: $text-color;
-
-      .category {
-        border-right: 1px solid $form-border-color;
-        display: flex;
-        align-items: center;
-        position: relative;
-        transition: 0.2s;
-
-        &:hover {
-          background-color: #eee;
-          i:last-child {
-            color: $primary;
-          }
-        }
-
-        i:first-child {
-          color: $primary;
-          position: absolute;
-          left: 10px;
-          z-index: 0;
-        }
-
-        i:last-child {
-          position: absolute;
-          right: 10px;
-          z-index: 0;
-        }
-
-        select {
-          -webkit-appearance: none;
-          border: 0;
-          background-color: transparent;
-          outline: none;
-          padding: 5px 30px 5px 35px;
-          font-size: 14px;
-          position: relative;
-          z-index: 1;
-        }
-      }
-
-      .search-field {
-        display: flex;
-        align-items: center;
-        position: relative;
-
-        input {
-          border: 0;
-          padding-left: 10px;
-          font-size: 14px;
-          outline: none;
-
-          &::placeholder {
-            color: $text-color;
-          }
-        }
-
-        button {
-          border: 0;
-          background-color: transparent;
-          outline: none;
         }
       }
     }
