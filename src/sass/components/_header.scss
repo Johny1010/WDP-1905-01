@@ -119,8 +119,21 @@ header {
     text-align: center;
 
     .search-bar {
-      padding-bottom: 10px;
-      margin: 0 auto;
+      padding: 15px 20px;
+      margin: 0;
+      display: flex;
+
+      .menu-hamburger {
+        display: none;
+      }
+
+      @media (max-width: 480px) {
+        .menu-hamburger {
+          display: block;
+          padding: 5px 20px;
+          font-size: 26px;
+        }
+      }
 
       .search-form {
         border: 1px solid $form-border-color;
@@ -173,13 +186,14 @@ header {
           display: flex;
           align-items: center;
           position: relative;
-          width: 220px;
+          width: 180px;
 
           input {
             border: 0;
             padding-left: 10px;
             font-size: 14px;
             outline: none;
+            width: 150px;
 
             &::placeholder {
               color: $text-color;
@@ -198,6 +212,7 @@ header {
     .menu {
       margin: 0 auto;
       padding-bottom: 10px;
+      transition: all 2s linear;
 
       ul {
         margin: 0;
@@ -235,6 +250,43 @@ header {
             }
           }
         }
+      }
+    }
+
+    @media (max-width: 480px) {
+      .menu {
+        position: fixed;
+        top: 230px;
+        left: 0;
+        z-index: 999;
+        opacity: 1;
+        height: 300px;
+        transition: height 3s ease;
+
+        ul {
+          display: flex;
+          flex-direction: column;
+          align-self: stretch;
+
+          li {
+            a {
+              display: flex;
+              justify-content: center;
+              margin: 0 auto;
+              color: $text-color;
+              background-color: #ffffff;
+              width: 100vw;
+            }
+          }
+        }
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      .visible {
+        display: block;
       }
     }
   }
