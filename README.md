@@ -34,17 +34,17 @@ dla plików, które zostały wybrane do za-commit'owania.
 
 ## Konwencje i dobre praktyki
 
-Maxymalna ilość znaków w linii: 88.
+Maksymalna ilość znaków w linii: 88.
 
-Do sliderów użuwamy wtyczki: [Tiny slider](https://www.npmjs.com/package/tiny-slider)
+Do sliderów używamy wtyczki: [Tiny slider](https://www.npmjs.com/package/tiny-slider)
 
 Wcięcia na dwie spacje.
 
-Odstępy między funcjami (entery).
+Odstępy między funkcjami (entery).
 
-Nazewnictwo modułów html wg schematu: 50_nazwa.html
+Nazewnictwo modułów html wg schematu: _50_nazwa.html_
 
-Sekcję css nazywamy wg schematu: \_section--nazwa.scss
+Sekcję css nazywamy wg schematu: _\_section--nazwa.scss_
 
 Opisy commitów w języku angielskim.
 
