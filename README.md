@@ -1,8 +1,8 @@
-# WDP Projekt Zespołowy
+﻿# WDP Projekt Zespołowy
 
 ## Opis projektu
 
-DO UZUPEŁNIENIA
+W projekcie jest strona internetowa, stworzona na prośbę klienta z uwzględnieniem jego uwag. Jest to strona zakupowa sklepu meblowego. Strona działa na komputerach i urządzeniach mobilnych. Opiera się na technologiach html, scss, npm scripts, java script.
 
 ## Demo
 
