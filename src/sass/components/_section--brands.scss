@@ -1,0 +1,49 @@
+.section--brands {
+  margin: 50px 0;
+  padding: 20px 0;
+
+  .border-container {
+    border-top: 1px solid #bbb;
+    border-bottom: 1px solid #bbb;
+    padding: 30px 0;
+  }
+
+  .brand-slider-wrapper {
+    padding: 0 40px;
+    position: relative;
+  }
+
+  .slider-nav {
+    [class^="btn-slider"] {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      background-color: #222;
+      color: #fff;
+      font-size: 22px;
+      border: none;
+      padding: 0 10px;
+      z-index: 1;
+      @extend %transition-time;
+      cursor: pointer;
+      &.btn-slider-left {
+        left: 0;
+      }
+      &.btn-slider-right {
+        right: 0;
+      }
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+
+  .brand-item {
+    box-shadow: 0 0 0 1px #bbb;
+    padding: 2px;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

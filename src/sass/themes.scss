@@ -1,0 +1,11 @@
+%transition-time {
+  transition: all $primary-transition-time, background-color $background-transition-time,
+    color $color-transition-time;
+}
+%primary-hover-animation {
+  @extend %transition-time;
+  &:not(.no-hover):hover {
+    background-color: $primary;
+    color: #fff;
+  }
+}
