@@ -1,0 +1,29 @@
+.section--feedback {
+  margin-bottom: 4rem;
+  .feedback-slider {
+    color: $text-color;
+    .quote {
+      transform: scale(8) translateY(-15%);
+      margin-bottom: 2rem;
+    }
+    .feedback-text {
+      padding: 10px 2rem;
+    }
+    .feedback-author {
+      max-width: 300px;
+      margin: 10px auto;
+      .author-info,
+      .author-name {
+        margin: 0;
+        transform: translateX(-10px);
+      }
+      .author-name {
+        font-weight: 700;
+        margin-top: 2px;
+      }
+      .author-img {
+        max-width: 55px;
+      }
+    }
+  }
+}
