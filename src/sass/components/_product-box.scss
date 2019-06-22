@@ -61,6 +61,7 @@
         &.full {
           @extend .fas;
         }
+
         &.rated,
         &.hovered {
           @extend .fas;
@@ -68,10 +69,12 @@
         }
       }
     }
+
     .stars.rated {
       a {
         cursor: default;
         @extend .far;
+
         &.full {
           @extend .fas;
           color: $primary;
@@ -101,6 +104,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     .price.old {
       .btn-main-small {
         text-decoration: line-through;
