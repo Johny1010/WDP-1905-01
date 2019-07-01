@@ -1,5 +1,8 @@
 /* eslint-disable no-undef */
 const sliders = document.querySelectorAll('.slider-container');
+const sliderProductPromotion = document.getElementById(
+  'product-promotion-slider-container'
+);
 
 // eslint-disable-next-line no-unused-vars
 sliders.forEach(slider => {
@@ -25,14 +28,14 @@ sliders.forEach(slider => {
     autoplayButtonOutput: false,
     mouseDrag: true,
     swipeAngle: 10,
-    responsive: {
-      768: {
-        items: 2
-      },
-      992: {
-        items: 3
-      }
-    },
+    // responsive: {
+    //   768: {
+    //     items: 2
+    //   },
+    //   992: {
+    //     items: 3
+    //   }
+    // },
     navContainer: dotsContainer
   });
 });
