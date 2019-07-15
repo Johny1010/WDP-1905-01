@@ -1,8 +1,5 @@
 /* eslint-disable no-undef */
 const sliders = document.querySelectorAll('.slider-container');
-const sliderProductPromotion = document.getElementById(
-  'product-promotion-slider-container'
-);
 
 // eslint-disable-next-line no-unused-vars
 sliders.forEach(slider => {
@@ -10,6 +7,7 @@ sliders.forEach(slider => {
   const dotsContainer = document.querySelector(`[data-sliderNav=${sliderName}]`);
   const slidesNumber = slider.childElementCount;
   const dots = document.createDocumentFragment();
+  const autoplay = slider.dataset.autoplay === '1';
 
   for (let i = 0; i < slidesNumber; i++) {
     const button = document.createElement('button');
@@ -17,8 +15,9 @@ sliders.forEach(slider => {
     button.style.display = 'none';
     dots.appendChild(button);
   }
-
-  dotsContainer.appendChild(dots);
+  if (dotsContainer) {
+    dotsContainer.appendChild(dots);
+  }
 
   tns({
     container: slider,
@@ -36,6 +35,15 @@ sliders.forEach(slider => {
     //     items: 3
     //   }
     // },
-    navContainer: dotsContainer
+    navContainer: dotsContainer,
+    autoplay
   });
+});
+
+const arrowSlider = document.querySelector('.mySlider');
+arrowSlider.tns({
+  container: '.mySlider',
+  controls: true,
+  controlsPosition: 'top',
+  nav: false
 });
