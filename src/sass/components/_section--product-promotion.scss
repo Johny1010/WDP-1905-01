@@ -112,24 +112,34 @@
       width: 100%;
       background-color: #cccccc;
       margin-left: 20px;
-      position: relative;
 
-      .sale-info {
-        background-color: #666666;
-        color: white;
-        text-align: center;
-        height: 200px;
-        margin-top: 150px;
+      @for $i from 1 to 3 {
+        .slide-#{$i} {
+          background-image: url("../images/post#{$i}.jpeg");
+        }
+      }
 
-        .sale-content {
-          padding: 40px;
+      .slide {
+        position: relative;
+        width: 650px;
 
-          p {
-            font-size: 25px;
-            margin: 0px;
+        .sale-info {
+          background-color: #666666;
+          color: white;
+          text-align: center;
+          height: 200px;
+          margin-top: 150px;
 
-            &:nth-child(1) {
-              font-size: 45px;
+          .sale-content {
+            padding: 40px;
+
+            p {
+              font-size: 25px;
+              margin: 0px;
+
+              &:nth-child(1) {
+                font-size: 45px;
+              }
             }
           }
         }

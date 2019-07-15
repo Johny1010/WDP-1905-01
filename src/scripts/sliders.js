@@ -40,8 +40,8 @@ sliders.forEach(slider => {
   });
 });
 
-const arrowSlider = document.querySelector('.mySlider');
-arrowSlider.tns({
+// const arrowSlider = document.querySelector('.mySlider');
+tns({
   container: '.mySlider',
   controls: true,
   controlsPosition: 'top',
