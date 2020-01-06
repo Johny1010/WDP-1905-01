@@ -34,4 +34,28 @@ dla plików, które zostały wybrane do za-commit'owania.
 
 ## Konwencje i dobre praktyki
 
-DO UZUPEŁNIENIA
+Maksymalna ilość znaków w linii: 88.
+
+Do sliderów używamy wtyczki: [Tiny slider](https://www.npmjs.com/package/tiny-slider)
+
+Wcięcia na dwie spacje.
+
+Odstępy między funkcjami (entery).
+
+Nazewnictwo modułów html wg schematu: _50_nazwa.html_
+
+Sekcję css nazywamy wg schematu: _\_section--nazwa.scss_
+
+Opisy commitów w języku angielskim.
+
+Tak gdzie to możliwe wykorzystujemy bootstrapa.
+
+Nie nadpisujemy klas bootsrapowych.
+
+Nie stylujemy po znacznikach html. Wykorzystujemy w tym celu klasy.
+
+W Java Script używamy tylko pojedynczego cudzysłowu.
+
+Robimy rebase, przed pull requestem.
+
+Nie zostawiamy w kodzie zbędnych komentarzy.
